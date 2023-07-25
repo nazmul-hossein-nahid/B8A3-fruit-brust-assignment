@@ -42,13 +42,12 @@
 <body class="font-lato">
 
     <!-- header section start here -->
-    <header class="container mx-auto border-2 border-red-300">
+    <header class="container mx-auto px-3">
         <!-- navbar section here -->
-        <nav class=" p-5 lg:mt-12 lg:py-8 lg:px-12 lg:rounded-full lg:bg-[#F85559]">
-            <div class=" flex justify-between items-center">
-
-                <div class="hidden md:block ">
-                    <ul class="flex gap-7 font-medium text-white text-lg">
+        <!-- <nav class="lg:mt-12 lg:py-8 lg:px-12 lg:rounded-full lg:bg-[#F85559]">
+            <div class="grid grid-cols-2 lg:grid-cols-3 lg:gap-14 items-center ">
+                <div class="hidden lg:block">
+                    <ul class="flex gap-7 justify-evenly font-medium text-white text-lg">
                         <li><a href="">Home</a></li>
                         <li><a href="">About Us</a></li>
                         <li><a href="">Shop</a></li>
@@ -56,44 +55,142 @@
                     </ul>
                 </div>
 
-                <div>
-                    <a class="flex items-center" href="">
-                        <img class="w-14" src="./images/logo.png">
+                <div class="place-self-center">
+                    <a class="flex items-center">
+                        <img src="./images/logo.png">
                         <h3 class="font-bold text-4xl text-[#121212] lg:text-white ml-4">Fruit Burst</h3>
                     </a>
                 </div>
-                <div class="hidden lg:block">
-                    <label>
-                        <input class="w-[400px] h-14 rounded-full p-6 outline-none" type="text"
-                            placeholder="Search here">
-                    </label>
-                </div>
 
-                <div class="md:hidden">
-                    <div class="dropdown">
-                        <label tabindex="0" class="btn btn-ghost btn-circle">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h16M4 18h7" />
-                            </svg>
+                <div class="place-self-end">
+                    <div class="hidden lg:block">
+                        <label>
+                            <input class="w-[400px] h-14 rounded-full p-6 outline-none" type="text"
+                                placeholder="Search here">
                         </label>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                            <li><a>Homepage</a></li>
-                            <li><a>Portfolio</a></li>
-                            <li><a>About</a></li>
-                        </ul>
+                    </div>
+
+                    <div class=" lg:hidden">
+                        <div class="dropdown">
+                            <label tabindex="0" class="btn btn-ghost btn-circle">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h16M4 18h7" />
+                                </svg>
+                            </label>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                                <li><a>Homepage</a></li>
+                                <li><a>Portfolio</a></li>
+                                <li><a>About</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </nav>
+        </nav> -->
 
+        <!-- bannar slider section -->
+        <section class="relative mt-14">
+            <!-- bannar text -->
+            <div class="absolute inset-0 z-50 w-4/6 mx-auto mt-3  md:mt-16 lg:mt-20 text-center">
+                <div>
+                    <h3 class="text-white font-extrabold text-sm md:text-4xl lg:text-7xl">Exotic tastes at your <br>
+                        doorstep</h3>
+                    <p class="text-white text-xs md:text-base lg:text-xl lg:mt-6">We supply highly quality organic
+                        products</p>
+                    <button
+                        class="px-3 py-2 mt-2 text-sm rounded-md lg:mt-8 lg:py-5 lg:px-7 lg:text-xl text-white font-extrabold bg-[#F85559] lg:rounded-lg">Shop
+                        Now</button>
+                </div>
 
+            </div>
 
+            <!-- bannar slider -->
+            <div class="carousel w-full">
 
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="./images/banner1.png" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+
+                    </div>
+                </div>
+
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="/images/banner2.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="/images/banner3.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="/images/banner4.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- bannar bottom section -->
+            <div class="hidden xl:block">
+                <div
+                    class=" absolute inset-x-0 py-12 px-16 h-auto w-[80%] mx-auto -mt-36 bg-white drop-shadow-lg rounded-lg grid grid-cols-5 items-center justify-items-center">
+                    <div>
+                        <img src="./images/fruit1.png">
+                        <p class="text-xl font-medium text-[#121212cc] capitalize text-center">grapes</p>
+                    </div>
+                    <div>
+                        <img src="./images/fruit2.png">
+                        <p class="text-xl font-medium text-[#121212cc] capitalize text-center">Orange</p>
+                    </div>
+                    <div>
+                        <img src="./images/fruit3.png">
+                        <p class="text-xl font-medium text-[#121212cc] capitalize text-center">Mango</p>
+                    </div>
+                    <div>
+                        <img src="./images/fruit4.png">
+                        <p class="text-xl font-medium text-[#121212cc] capitalize text-center">Strawberry</p>
+                    </div>
+                    <div>
+                        <img src="./images/fruit5.png">
+                        <p class="text-xl font-medium text-[#121212cc] capitalize text-center">Pomegranate</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
     </header>
 
+    <!-- main section here -->
+    <main class="container mx-auto">
+
+        <section class="mt-64">
+            <div>
+                <div>
+                    <h3 class="text-5xl font-extrabold text-[#121212]">Deal of the day</h3>
+                    <p class="text-5xl font-extrabold text-[#121212]">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+                <div>
+
+                </div>
+            </div>
+
+        </section>
+
+    </main>
 
 </body>
 
