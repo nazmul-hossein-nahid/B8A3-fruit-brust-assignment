@@ -1,11 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <title>Fruit Burst | website</title>
+
+    <!-- tailwind and daisyUI CDN here -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- lato google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- font Awesome -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <style>
+        .font-lato {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+
 </head>
-<body>
-    
+
+<body class="font-lato">
+
+    <!-- header section start here -->
+    <header class="container mx-auto border-2 border-red-300">
+        <!-- navbar section here -->
+        <nav class=" p-5 lg:mt-12 lg:py-8 lg:px-12 lg:rounded-full lg:bg-[#F85559]">
+            <div class=" flex justify-between items-center">
+
+                <div class="hidden md:block ">
+                    <ul class="flex gap-7 font-medium text-white text-lg">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Shop</a></li>
+                        <li><a href="">All Fruits</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <a class="flex items-center" href="">
+                        <img class="w-14" src="./images/logo.png">
+                        <h3 class="font-bold text-4xl text-[#121212] lg:text-white ml-4">Fruit Burst</h3>
+                    </a>
+                </div>
+                <div class="hidden lg:block">
+                    <label>
+                        <input class="w-[400px] h-14 rounded-full p-6 outline-none" type="text"
+                            placeholder="Search here">
+                    </label>
+                </div>
+
+                <div class="md:hidden">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost btn-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h7" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Homepage</a></li>
+                            <li><a>Portfolio</a></li>
+                            <li><a>About</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+
+
+    </header>
+
+
 </body>
+
 </html>
