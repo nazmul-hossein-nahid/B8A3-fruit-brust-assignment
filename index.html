@@ -45,7 +45,7 @@
     <header class="container mx-auto px-3">
 
         <!-- navbar section here -->
-        <nav class=" lg:bg-red-500 rounded-full lg:mt-10 text-white">
+        <nav class=" lg:bg-[#F85559] rounded-full lg:mt-10 text-white">
             <div class="lg:px-6 py-5 ">
                 <div class="relative flex grid items-center grid-cols-2 lg:grid-cols-3">
                     <ul class="flex text-lg font-medium items-center hidden space-x-4 xl:space-x-8 lg:flex">
@@ -111,6 +111,7 @@
 
                 <div id="slide1" class="carousel-item relative w-full">
                     <img src="./images/banner1.png" />
+                    <div class=" absolute hero-overlay  bg-black bg-opacity-60 rounded-lg"></div>
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide4" class="btn btn-circle">❮</a>
                         <a href="#slide2" class="btn btn-circle">❯</a>
@@ -120,6 +121,7 @@
 
                 <div id="slide2" class="carousel-item relative w-full">
                     <img src="./images/banner2.png" class="w-full" />
+                    <div class=" absolute hero-overlay  bg-black bg-opacity-60 rounded-lg"></div>
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide1" class="btn btn-circle">❮</a>
                         <a href="#slide3" class="btn btn-circle">❯</a>
@@ -128,6 +130,7 @@
 
                 <div id="slide3" class="carousel-item relative w-full">
                     <img src="./images/banner3.png" class="w-full" />
+                    <div class=" absolute hero-overlay  bg-black bg-opacity-60 rounded-lg"></div>
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide2" class="btn btn-circle">❮</a>
                         <a href="#slide4" class="btn btn-circle">❯</a>
@@ -136,6 +139,7 @@
 
                 <div id="slide4" class="carousel-item relative w-full">
                     <img src="./images/banner4.png" class="w-full" />
+                    <div class=" absolute hero-overlay bg-black bg-opacity-60 rounded-lg"></div>
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide3" class="btn btn-circle">❮</a>
                         <a href="#slide1" class="btn btn-circle">❯</a>
@@ -589,7 +593,7 @@
         <section class="mb-36">
 
             <div class="hero rounded-lg" style="background-image: url('./images/team.png');">
-                <div class="hero-overlay bg-opacity-60 rounded-lg"></div>
+                <div class="hero-overlay bg-black bg-opacity-60 rounded-lg"></div>
                 <div class="w-3/4 text-center py-32">
                     <div class="">
                         <h3 class="text-5xl font-extrabold text-white text-center">Meet the team section</h3>
@@ -692,15 +696,6 @@
                     </div>
                 </div>
             </div>
-
-
-
-
-
-
-
-
-
         </section>
 
         <!-- Why Choose Us -->
@@ -710,7 +705,7 @@
                 popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45
                 BC, making it over 2000 years old.</p>
             <div class="grid  xl:grid-cols-3 ">
-                <div class="space-y-12 flex-1 pb-10 xl:pr-14">
+                <div class="order-1 xl:order-1 space-y-12 flex-1 pb-10 xl:pr-14">
                     <div class="flex flex-col items-center text-center xl:flex-row xl:items-start xl:text-left gap-6">
                         <div>
                             <div class="w-14 h-14 bg-red-50 rounded-full flex p-4">
@@ -756,11 +751,11 @@
 
                 </div>
 
-                <div class="flex-1">
+                <div class="flex-1 order-0 xl:order-1 mb-4 xl:mb-0">
                     <img class="w-full" src="./images/whychoose1.png" alt="">
                 </div>
 
-                <div class="space-y-12 flex-1 pt-10 xl:pl-14">
+                <div class="order-2 xl:order-1 space-y-12 flex-1  xl:pl-14">
                     <div
                         class="flex flex-col-reverse items-center text-center xl:flex-row xl:items-start xl:text-left gap-6">
                         <div class="flex flex-col justify-end  xl:text-right">
@@ -805,10 +800,6 @@
                             </div>
                         </div>
                     </div>
-
-
-
-
                 </div>
             </div>
 
